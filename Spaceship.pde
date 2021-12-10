@@ -7,7 +7,7 @@ class Spaceship extends Floater
       myYspeed= Math.random()*(2)-1;
       myPointDirection= 0;
       corners= 3;
-      xCorners= new int[corners];
+      xCorners= new int[] {-8,16,-8};
       yCorners= new int[corners];
       xCorners[0]= -8;//(int)myCenterX-8;
       xCorners[1]=16;//(int)myCenterX+16;
@@ -28,5 +28,11 @@ class Spaceship extends Floater
       myXspeed*=0.99;
       myXspeed*=0.99;
     }
+    public double getX(){
+    return myCenterX;
+  }
+    public double getY(){
+    return myCenterY;
+  }
    
 }
