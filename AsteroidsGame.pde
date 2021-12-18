@@ -64,6 +64,6 @@ public void keyPressed(){
   }
   
   else if(key == 'z') bob.hyperspace();
-  else if(key == ' ') bullets.add(new Bullet(bob));
+  else if(key == 'm') bullets.add(new Bullet(bob));
   
 }
